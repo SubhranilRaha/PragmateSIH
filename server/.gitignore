@@ -1,0 +1,4 @@
+.env
+/node_modules
+/sih-encoded-2.pem
+/sih-encoded.pem

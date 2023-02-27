@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer components{
+    html {
+        scroll-behavior: smooth;
+    }
+    .center{
+        @apply flex justify-center items-center
+    }
+    .navstyle{
+        @apply flex flex-col justify-center items-center 
+    }
+    .icon{
+        transition:0.5s;
+        @apply block text-3xl translate-y-2 
+    } 
+    
+    .text{
+        transition:0.5s;
+        @apply  font-semibold text-txt -translate-y-3 opacity-0
+    }
+    li.active a .text {
+        @apply transform -translate-y-5 opacity-100
+    }
+    li.active a .icon {
+        @apply transform -translate-y-6 text-white bg-first py-2 px-3 rounded-full
+    }
+    .min-height-75{
+        min-height:600px;
+    }
+    .abtbgimg{
+        background-image: url('abtbg.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-size:cover;   
+        background-position: center center;
+        @apply absolute  w-full h-full mix-blend-overlay 
+    }
+}
